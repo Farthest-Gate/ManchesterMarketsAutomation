@@ -26,6 +26,9 @@ Follow these steps to set up and run tests after cloning the repository:
 6. Install typescript definition file:
    npm install --save-dev @types/node
 
+7. Install node.js library dotenv:
+   npm install dotenv
+
 8. Run all tests :
    npx playwright test
 
