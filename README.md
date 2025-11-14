@@ -23,16 +23,19 @@ Follow these steps to set up and run tests after cloning the repository:
 5. Verify TypeScript is installed :
    npx tsc --version
 
-6. Run all tests :
+6. Install typescript definition file:
+   npm install --save-dev @types/node
+
+8. Run all tests :
    npx playwright test
 
-7. Run a specific test file :
+9. Run a specific test file :
    npx playwright test tests/example.spec.ts
 
-8. Open HTML test report :
+10. Open HTML test report :
    npx playwright show-report
 
-9. Debug tests (step-through mode) :
+11. Debug tests (step-through mode) :
    npx playwright test --debug
 
 Notes:
