@@ -1,7 +1,7 @@
 # ManchesterMarketsAutomation
 Automation project for Manchester licensing
 
-# Playwright + TypeScript Project Setup
+# Project Setup guide
 
 Follow these steps to set up and run tests after cloning the repository:
 
