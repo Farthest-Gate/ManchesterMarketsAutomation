@@ -1,5 +1,11 @@
 import { defineConfig } from '@playwright/test';
 
+import dotenv from 'dotenv';
+import path from 'path';
+const ENV = process.env.ENV || 'development'; // Default to 'development' if ENV is not set
+dotenv.config({ path: path.resolve(__dirname, `.env.${ENV}`), debug: true });
+
+
 export default defineConfig({
   testDir: './tests',         // folder where your tests are
   timeout: 30000,             // max time per test
