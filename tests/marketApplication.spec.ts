@@ -32,7 +32,7 @@ test('Markets Rights Application', async ({ page }) => {
    
 
     await marketPage.fillEventTimings(marketApplicationData.timings);
-
+  
       // Example: select multiple checkboxes
     await marketPage.fillMarketCheckboxes(marketApplicationData.marketDetails);
 

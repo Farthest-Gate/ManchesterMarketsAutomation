@@ -77,6 +77,8 @@ async fillMarketCapacity(capacity: MarketDetails) {
     await this.page.getByRole('spinbutton', { name: 'How many of these trading' }).fill(capacity.occupiedspace);
 }
 
+
+
  // Generic methods
 async selectCheckbox(label: string) {
   const checkbox = this.page.getByRole('checkbox', { name: label });
@@ -108,8 +110,6 @@ async fillStallCharge(stallCharge: MarketDetails) {
 async fillPurpose(purpose: MarketDetails) {
   await this.page.getByRole('textbox', { name: 'Please provide more details about the purpose' }).fill(purpose.purpose);
 }
-
-
 
 
 }
