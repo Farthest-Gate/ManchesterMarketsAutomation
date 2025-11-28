@@ -4,7 +4,7 @@ import { makePayment } from '../pages/thmCardPayment';
 test('test', async ({ page }) => {
 await page.goto('https://lbth-markets-test.farthestgate.co.uk/sf/control/dashboard');
 await page.getByRole('textbox', { name: 'Email' }).click();
-await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+d2603@outlook.com');
+await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+normal_user_88@outlook.com');
 await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
 await page.getByRole('button', { name: 'Submit' }).click();
 await page.getByRole('button', { name: 'Licence application' }).click();

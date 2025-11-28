@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { makeWccPayment } from '../pages/wccCardPayment';
+import { licenceApproval } from '../pages/wccBOApproval';
 
 test('test', async ({ page }) => {
-await page.goto('https://testwccmarkets.farthestgate.co.uk/sf/control/pavementapplication');
-await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+normal_user_88@outlook.com');
-await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
+  await page.goto('/sf/control/dashboard');
+  await page.getByRole('textbox', { name: 'Email' }).fill(process.env.EMAIL!);
+  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.PASSWORD!);
 await page.getByRole('button', { name: 'Submit' }).click();
 
-await page.goto('https://testwccmarkets.farthestgate.co.uk/sf/control/pavementapplication');
+await page.goto('/sf/control/pavementapplication');
 await page.getByRole('button', { name: 'confirm' }).first().click();
 
 await page.getByRole('checkbox', { name: 'Please select how you intend' }).check();
@@ -63,6 +64,8 @@ await makeWccPayment(page);
 
 await expect(page.getByText('Validation required')).toBeVisible({ timeout: 50000 });
 console.log(page.url());
+
+await licenceApproval(page);
 
 
 });
