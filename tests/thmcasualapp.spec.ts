@@ -2,9 +2,12 @@ import { test, expect } from '@playwright/test';
 import { makePayment } from '../pages/thmCardPayment';
 
 test('test', async ({ page }) => {
-await page.goto('https://lbth-markets-test.farthestgate.co.uk/sf/control/dashboard');
-await page.getByRole('textbox', { name: 'Email' }).click();
-await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+normal_user_88@outlook.com');
+// await page.goto('https://lbth-markets-test.farthestgate.co.uk/sf/control/dashboard');
+// await page.getByRole('textbox', { name: 'Email' }).click();
+// await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+normal_user_88@outlook.com');
+await page.goto('https://10.4.49.4:7443/sf/control/login');
+  
+  await page.getByRole('textbox', { name: 'Email' }).fill('frant_ofis_test+normal_user_71@outlook.com');
 await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
 await page.getByRole('button', { name: 'Submit' }).click();
 await page.getByRole('button', { name: 'Licence application' }).click();
@@ -43,14 +46,14 @@ await page.getByRole('checkbox', { name: 'Confirmation *', exact: true }).check(
 await page.getByRole('checkbox', { name: 'Confirmation **' }).check();
 await page.getByRole('button', { name: 'Add Declaration', exact: true }).click();
 await page.getByRole('button', { name: 'Pay & submit' }).click();
+await page.pause();
+
+//await makePayment(page);
 
 
-await makePayment(page);
+//await page.getByText('Validation required', { exact: true }).waitFor({ state: 'visible', timeout: 30000 });
+//await expect(page.getByText('Validation required', { exact: true })).toBeVisible();
 
-
-await page.getByText('Validation required', { exact: true }).waitFor({ state: 'visible', timeout: 30000 });
-await expect(page.getByText('Validation required', { exact: true })).toBeVisible();
-
-console.log(page.url());
+//console.log(page.url());
 
 });

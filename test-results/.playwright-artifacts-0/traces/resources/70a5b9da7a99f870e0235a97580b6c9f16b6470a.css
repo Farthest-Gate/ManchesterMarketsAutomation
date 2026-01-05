@@ -1,0 +1,4 @@
+.cascading-dropdown-loading {
+	cursor: wait;
+	background: url('../images/ajax-loader.gif') 85% center no-repeat transparent;
+}

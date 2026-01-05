@@ -14,9 +14,9 @@ await page.getByRole('radio', { name: 'Car boot sale (can include' }).check();
 await page.getByRole('textbox', { name: 'Name of your market *' }).fill('Flower Market');
 //await page.getByRole('radio', { name: 'Market (can include car boot and tabletop sales where sellers are traders)' }).check();
 
-await page.getByRole('combobox', { name: 'Please select what' }).click();
+await page.getByRole('combobox', { name: 'Please tell us what' }).click();
 await page.locator('a').filter({ hasText: 'Street food' }).click();
-await page.getByRole('combobox', { name: 'Please select what' }).click();
+await page.getByRole('combobox', { name: 'Please tell us what' }).click();
 await page.locator('a').filter({ hasText: 'Hot and soft drinks' }).click();
 await page.getByRole('paragraph').filter({ hasText: 'Street food' }).click();
 await expect(page.getByRole('paragraph').filter({ hasText: 'Street food' })).toBeVisible();
@@ -31,8 +31,8 @@ await page.getByRole('textbox', { name: 'Please enter the Premises licence or te
 
 //await page.getByRole('textbox', { name: 'Please explain how the items' }).fill('Gift items');
 //await page.getByRole('textbox', { name: 'Please give the address where' }).fill('Address of the out of hours storage');
-await page.getByRole('textbox', { name: 'Start Date' }).fill('01/02/2025');
-await page.getByRole('textbox', { name: 'End Date' }).fill('20/02/2025');
+await page.getByRole('textbox', { name: 'Start Date' }).fill('01/04/2025');
+await page.getByRole('textbox', { name: 'End Date' }).fill('20/04/2025');
 await page.getByRole('textbox', { name: 'Start Hour' }).fill('10:00');
 await page.getByRole('textbox', { name: 'End Hour' }).fill('19:00');
 await page.getByRole('spinbutton', { name: 'What is the capacity of your' }).fill('50');
@@ -104,9 +104,9 @@ await page.getByRole('group', { name: 'Will there be any other' }).getByLabel('N
 await page.getByRole('group', { name: 'Are there any customer entry' }).getByLabel('No').check();
 // This was checking No then Yes immediately. I've kept only the final intended state.
 await page.getByRole('group', { name: 'Do you own the premises where' }).getByLabel('Yes').check();
+await page.getByRole('checkbox', { name: 'I confirm I have received' }).check();
 await page.getByRole('group', { name: 'Do you have any other' }).getByLabel('No').check();
 await page.getByRole('group', { name: 'Have you undertaken any' }).getByLabel('No').check();
-await page.getByRole('group', { name: 'Is the market due to take' }).getByLabel('Yes').check();
 await page.getByRole('group', { name: 'Is there any other' }).getByLabel('No').check();
 //await page.locator('//div[@id="formbuilder-1_panel_2"]//input[@type="checkbox" and @value="Yes"]').check()
 //await page.getByRole('checkbox', { name: 'Yes' }).check(); //terms and conditions
