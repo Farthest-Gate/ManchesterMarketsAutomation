@@ -1,10 +1,10 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../lib/pages/LoginPage';
-import { MarketApplicationPage } from '../lib/pages/marketApplicationPage';
+import { LoginPage } from '../../lib/pages/LoginPage';
+import { MarketApplicationPage } from '../../lib/pages/marketApplicationPage';
 import { expect } from '@playwright/test';
-import { AddressModalPage } from '../lib/pages/addressModalPage';
-import {marketApplicationData} from '../lib/datafactory/marketApplicationData';
-import {userData} from '../lib/datafactory/userData';
+import { AddressModalPage } from '../../lib/pages/addressModalPage';
+import {marketApplicationData} from '../../lib/datafactory/marketApplicationData';
+import {userData} from '../../lib/datafactory/userData';
 import path from 'path';
 
 test('Markets Rights Application', async ({ page }) => {
