@@ -17,7 +17,9 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    SlowMo: 100,
+    launchOptions: {
+      slowMo: 1000,
+    },
   },
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'always' }]],
 });

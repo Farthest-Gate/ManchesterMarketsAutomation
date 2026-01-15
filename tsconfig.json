@@ -8,5 +8,5 @@
     "moduleResolution": "Node",
     "outDir": "dist"
   },
-  "include": ["tests/**/*.ts", "pages/**/*.ts"]
+  "include": ["tests/**/*.ts", "lib/pages/**/*.ts"]
 }

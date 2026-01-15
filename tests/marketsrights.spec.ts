@@ -15,18 +15,18 @@ await page.getByRole('textbox', { name: 'Name of your market *' }).fill('Flower 
 //await page.getByRole('radio', { name: 'Market (can include car boot and tabletop sales where sellers are traders)' }).check();
 
 await page.getByRole('combobox', { name: 'Please tell us what' }).click();
-await page.locator('a').filter({ hasText: 'Street food' }).click();
+await page.locator('a').filter({ hasText: 'Hot cooked food' }).click();
 await page.getByRole('combobox', { name: 'Please tell us what' }).click();
-await page.locator('a').filter({ hasText: 'Hot and soft drinks' }).click();
-await page.getByRole('paragraph').filter({ hasText: 'Street food' }).click();
-await expect(page.getByRole('paragraph').filter({ hasText: 'Street food' })).toBeVisible();
-await page.getByRole('paragraph').filter({ hasText: 'Hot and soft drinks' }).click();
+await page.locator('a').filter({ hasText: 'Drinks excluding alcohol' }).click();
+await page.getByRole('paragraph').filter({ hasText: 'Hot cooked food' }).click();
+await expect(page.getByRole('paragraph').filter({ hasText: 'Hot cooked food' })).toBeVisible();
+await page.getByRole('paragraph').filter({ hasText: 'Drinks excluding alcohol' }).click();
 
 
 
-await page.getByRole('group', { name: 'Will there be alcohol sold on the market?' }).getByLabel('Yes').check();
-await page.getByRole('group', { name: 'Do you have a premises licence or temporary event notice' }).getByLabel('Yes').check();
-await page.getByRole('textbox', { name: 'Please enter the Premises licence or temporary event notice number *' }).fill('PNoticeNum');
+await page.getByRole('group', { name: 'Will there be alcohol sold on the market?' }).getByLabel('No').check();
+//await page.getByRole('group', { name: 'Do you have a premises licence or temporary event notice' }).getByLabel('Yes').check();
+//await page.getByRole('textbox', { name: 'Please enter the Premises licence or temporary event notice number *' }).fill('PNoticeNum');
 
 
 //await page.getByRole('textbox', { name: 'Please explain how the items' }).fill('Gift items');
