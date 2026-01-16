@@ -17,28 +17,27 @@ export class MarketApplicationPage {
             .fill('Previous Market Details');
     }
 
-    async selectCategory(category: string) {
-        await  this.page.getByRole('radio', { name: category }).check();
+    async selectMarketType(marketType: string) {
+        await  this.page.getByRole('radio', { name: marketType }).check();
     }
 
     async setMarketName(name: string) {
         await this.page.getByRole('textbox', { name: 'Name of your market *' }).fill(name);
     }
 
-    async selectCategories() {
-        await this.page.getByRole('combobox', { name: 'Please select what' }).click();
-        await this.page.locator('a', { hasText: 'Street food' }).click();
+    async selectCommodities(commodity1: string, commodity2: string) {
+        await this.page.getByRole('combobox', { name: 'Please tell us what' }).click();
+        await this.page.locator('a', { hasText: commodity1 }).click();
 
-        await this.page.getByRole('combobox', { name: 'Please select what' }).click();
-        await this.page.locator('a', { hasText: 'Hot and soft drinks' }).click();
+        await this.page.getByRole('combobox', { name: 'Please tell us what' }).click();
+        await this.page.locator('a', { hasText: commodity2 }).click();
     }
 
-    async verifySelectedCategories() {
-        await expect(this.page.getByRole('paragraph').filter({ hasText: 'Street food' })).toBeVisible();
-        await expect(this.page.getByRole('paragraph').filter({ hasText: 'Hot and soft drinks' })).toBeVisible();
+    async verifySelectedCommodities(commodity1: string, commodity2: string) {
+        await expect(this.page.getByRole('paragraph').filter({ hasText: commodity1})).toBeVisible();
+        await expect(this.page.getByRole('paragraph').filter({ hasText: commodity2 })).toBeVisible();
     }
-
-    async alcoholDetails() {
+    async alcoholDetails(licenceNumber: string) {
         await this.page.getByRole('group', { name: 'Will there be alcohol sold on the market?' })
             .getByLabel('Yes').check();
 
@@ -47,7 +46,7 @@ export class MarketApplicationPage {
 
         await this.page
             .getByRole('textbox', { name: 'Please enter the Premises licence or temporary event notice number *' })
-            .fill('PNoticeNum');
+            .fill(licenceNumber);
     }
 
     async uploadLayoutPlan(filePath: string) {
@@ -96,7 +95,7 @@ async selectCheckboxes(labels: string[]) {
 // Use the data from marketApplicationData
 async fillMarketCheckboxes(data: any) {
   await this.selectCheckboxes(data.stallTypes); // multiple checkboxes
-  await this.selectCheckbox(data.marketType);   // single checkbox
+  await this.selectCheckbox(data.natureOfMarket);   // single checkbox
   await this.selectCheckbox(data.terms);        // T&C
 }
 

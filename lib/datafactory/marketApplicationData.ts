@@ -7,7 +7,6 @@ export interface MarketTimings {
 }
 
 export interface MarketDetails {
-  category: string;
   marketname: string;
   marketcapacity: string;
   occupiedspace: string;
@@ -18,6 +17,11 @@ export interface MarketDetails {
   marketType: string;
   terms: string;
   layoutPlan: string;
+  commodity1: string;
+  commodity2: string;
+  natureOfMarket: string;
+  premiseNumber: string;
+  otherMarketType: string;
 }
 
 export interface AddressData {
@@ -40,7 +44,10 @@ export const marketApplicationData: MarketApplicationData = {
   },
   marketDetails: {
 
-    category: 'Car boot sale (can include',
+    marketType: 'Car boot sale (can include',
+    otherMarketType : 'Market (can include car boot and tabletop',
+    commodity1 : 'Unwanted household goods (second-hand items sold by householders, not traders)',
+    commodity2 : 'Vintage Homeware',
     marketname: 'Flower Market',
     marketcapacity: '100',
     occupiedspace: '50',
@@ -48,9 +55,10 @@ export const marketApplicationData: MarketApplicationData = {
     stallCharge: '200',
     purpose: 'purpose and benefits',
     stallTypes: ['Demountable stalls', 'Stands', 'Vehicles'],
-    marketType: 'Commercial',
+    natureOfMarket : 'Commercial',
     terms: 'Yes',
-    layoutPlan: 'check.png'
+    layoutPlan: 'check.png',
+    premiseNumber: 'PNoticeNum'
   },
   address: {
     postcode: 'm1 1db'
