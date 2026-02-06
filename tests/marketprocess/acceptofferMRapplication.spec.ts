@@ -12,10 +12,10 @@ test('test', async ({ page }) => {
   await page.getByRole('gridcell', { name: 'Application date: activate to' }).click();
   const page1Promise = page.waitForEvent('popup');
   await page.getByRole('link', { name: 'View' }).first().click();
-    const page1 = await page1Promise;
-    await page1.pause();
-   let sfbourl = page1.url();
-   console.log(sfbourl);
+  const page1 = await page1Promise;
+  await page1.pause();
+  let sfbourl = page1.url();
+  console.log(sfbourl);
   let sfurl = sfbourl.replace("/sfbo/","/sf/");
 
  
@@ -33,7 +33,8 @@ test('test', async ({ page }) => {
   await page1.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
   await page1.getByRole('button', { name: 'Submit' }).click();
   await page1.getByRole('button', { name: 'Pay outstading fee' }).click();
-  await page1.getByRole('checkbox', { name: 'I accept the terms and' }).check();
+  await page1.getByRole('checkbox', { name: 'accept_terms' }).first().check();
+  await page1.getByTitle("I have read and accept the terms and conditions of the draft market rights licence").check();
   await page1.getByRole('button', { name: 'Submit' }).click();
 
   await page1.getByRole('textbox', { name: 'Name on card' }).isVisible({ timeout: 100000 });
@@ -44,10 +45,10 @@ test('test', async ({ page }) => {
   await page1.getByRole('textbox', { name: 'CVC number This is the 3 or 4' }).fill('123');
   await page1.getByRole('textbox', { name: 'Email address' }).click();
   await page1.getByRole('textbox', { name: 'Email address' }).fill('frant_ofis_test+mcc_dipa2@outlook.com');
-    await page1.getByRole('button', { name: 'Pay Now' }).isVisible();
+  await page1.getByRole('button', { name: 'Pay Now' }).isVisible();
   await page1.getByRole('button', { name: 'Pay Now' }).click();
   await page1.getByRole('button', { name: 'Pay Now' }).isVisible();
-  //await page1.getByText('We are processing your').click();
+ 
   await page1.locator('h1').isVisible();
   await expect(page1.locator('h1')).toContainText('Payment');
   await expect(page1.locator('#container')).toContainText('Thank you for your payment');

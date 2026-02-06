@@ -22,6 +22,7 @@ export interface MarketDetails {
   natureOfMarket: string;
   premiseNumber: string;
   otherMarketType: string;
+  location: string;
 }
 
 export interface AddressData {
@@ -47,7 +48,7 @@ export const marketApplicationData: MarketApplicationData = {
     marketType: 'Car boot sale (can include',
     otherMarketType : 'Market (can include car boot and tabletop',
     commodity1 : 'Unwanted household goods (second-hand items sold by householders, not traders)',
-    commodity2 : 'Vintage Homeware',
+    commodity2 : 'Hot cooked food, drinks and sweets',
     marketname: 'Flower Market',
     marketcapacity: '100',
     occupiedspace: '50',
@@ -58,7 +59,8 @@ export const marketApplicationData: MarketApplicationData = {
     natureOfMarket : 'Commercial',
     terms: 'Yes',
     layoutPlan: 'check.png',
-    premiseNumber: 'PNoticeNum'
+    premiseNumber: 'PNoticeNum',
+    location: 'In a pedestrianised street'
   },
   address: {
     postcode: 'm1 1db'
