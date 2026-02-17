@@ -28,17 +28,22 @@ export interface MarketDetails {
 export interface AddressData {
   postcode: string;
 }
+export interface streetData{
+  streetInitials: string;
+  streetInitials1: string;
+}
 
 export interface MarketApplicationData {
   timings: MarketTimings;
   marketDetails: MarketDetails;
   address: AddressData;
+  streetAddressData: streetData;
 }
 
 export const marketApplicationData: MarketApplicationData = {
   timings: {
-    startDate: '01/02/2025',
-    endDate: '20/02/2025',
+    startDate: '01/04/2026',
+    endDate: '20/04/2026',
     startTime: '10:00',
     endTime: '19:00',
     
@@ -60,9 +65,13 @@ export const marketApplicationData: MarketApplicationData = {
     terms: 'Yes',
     layoutPlan: 'check.png',
     premiseNumber: 'PNoticeNum',
-    location: 'In a pedestrianised street'
+    location: 'In a road'
   },
   address: {
     postcode: 'm1 1db'
+  },
+  streetAddressData:{
+    streetInitials : 'Buck',
+    streetInitials1 : 'Buckh'
   }
 };

@@ -13,7 +13,7 @@ export class AddressModalPage {
           
         const modal = this.page.locator('.modal-dialog.modal-md');
 
-       const dropdown = modal.locator('.filter-option.pull-left');
+       const dropdown = modal.locator('.filter-option.pull-left').first();
        await dropdown.click();
 
         await this.page.getByRole('option', {
@@ -27,7 +27,9 @@ export class AddressModalPage {
         await expect(dropdown).not.toHaveText('Select Address');
 
         const selectAddressButton = modal.locator('.modal-footer >> text=Select address');
+        //await selectAddressButton.scrollIntoViewIfNeeded();
         await expect(selectAddressButton).toBeVisible();
         await selectAddressButton.click();
     }
 }
+

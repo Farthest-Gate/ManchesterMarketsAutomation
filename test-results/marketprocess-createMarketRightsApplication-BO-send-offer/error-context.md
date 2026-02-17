@@ -1,0 +1,1065 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - link "Manchester city council" [ref=e8] [cursor=pointer]:
+          - /url: https://www.manchester.gov.uk/
+          - img "Manchester city council" [ref=e9]
+      - navigation [ref=e13]:
+        - generic [ref=e14]:
+          - link "" [ref=e16] [cursor=pointer]:
+            - /url: home?t=n&did=street_trading
+            - generic [ref=e17]: 
+          - generic [ref=e18]:
+            - list [ref=e19]:
+              - listitem [ref=e20]:
+                - link "Markets" [ref=e21] [cursor=pointer]:
+                  - /url: home?t=n&did=street_trading
+              - listitem [ref=e22]:
+                - link "Enquiries (current)" [ref=e23] [cursor=pointer]:
+                  - /url: correspondence
+                  - text: Enquiries
+                  - generic [ref=e24]: (current)
+              - listitem [ref=e25]:
+                - link "Account" [ref=e26] [cursor=pointer]:
+                  - /url: personalaccountview
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Log out" [ref=e29] [cursor=pointer]:
+                  - /url: logoutSFBO
+                  - generic [ref=e30]: 
+    - main [ref=e31]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "Application MAR51698" [level=3] [ref=e36]
+          - generic [ref=e38]:
+            - button "Assign to" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]: Assign to
+            - text: 
+            - combobox "Assign to" [ref=e42]:
+              - option "Assign to" [selected]
+              - option "jack.riley+bo@farthestgate.co.uk"
+        - generic [ref=e43]:
+          - generic [ref=e44]: Applicant details
+          - generic [ref=e46]:
+            - generic [ref=e47]: "Name:"
+            - 'document "Name: Dipa Shah" [ref=e49]': Dipa Shah
+            - generic [ref=e50]: "Telephone:"
+            - 'document "Telephone: 02048787878" [ref=e52]': "02048787878"
+            - generic [ref=e53]: "Email:"
+            - 'document "Email: frant_ofis_test+mcc_dipa2@outlook.com" [ref=e55]': frant_ofis_test+mcc_dipa2@outlook.com
+            - generic [ref=e56]: "Address:"
+            - 'document "Address: Brick Lane School, 41 Bacon Street, London, GreaterLondon, E26DY" [ref=e58]': Brick Lane School, 41 Bacon Street, London, GreaterLondon, E26DY
+        - generic [ref=e59]:
+          - generic [ref=e60]: Application details
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - heading "Application details" [level=4] [ref=e64]
+              - generic [ref=e65]: Application
+              - 'document "Application: Market rights" [ref=e66]': Market rights
+              - generic [ref=e67]: Status
+              - 'document "Status: Awaiting Decision" [ref=e68]': Awaiting Decision
+              - generic [ref=e69]: Application number
+              - 'document "Application number: MAR51698" [ref=e70]': MAR51698
+              - generic [ref=e71]: Application date
+              - 'document "Application date: 16/02/2026" [ref=e72]': 16/02/2026
+              - generic [ref=e73]: Created by
+              - 'document "Created by: frant_ofis_test+mcc_dipa2@outlook.com" [ref=e74]': frant_ofis_test+mcc_dipa2@outlook.com
+            - generic [ref=e75]:
+              - heading "Other permissions and stakeholders" [level=4] [ref=e79]
+              - generic [ref=e80]: Do you own the premises where the market is being held?
+              - 'document "Do you own the premises where the market is being held?: Yes" [ref=e82]': "Yes"
+              - generic [ref=e83]: Do you have any other permissions?
+              - 'document "Do you have any other permissions?: No" [ref=e85]': "No"
+              - generic [ref=e86]: Have you undertaken any consultations about your market?
+              - 'document "Have you undertaken any consultations about your market?: No" [ref=e88]': "No"
+              - generic [ref=e89]: Is there any other information you would like to give to support your application?
+              - 'document "Is there any other information you would like to give to support your application?: No" [ref=e91]': "No"
+            - generic [ref=e92]:
+              - heading "Declaration" [level=4] [ref=e96]
+              - generic [ref=e97]: Please confirm you have read the terms and conditions
+              - 'document "Please confirm you have read the terms and conditions: Please confirm you have read the terms and conditions" [ref=e99]':
+                - list [ref=e100]:
+                  - listitem [ref=e101]: "Yes"
+            - generic [ref=e103]:
+              - heading "About your market" [level=4] [ref=e107]
+              - generic [ref=e108]: Have you or your business/organisation previously held markets in Manchester?
+              - 'document "Have you or your business/organisation previously held markets in Manchester?: Yes" [ref=e110]': "Yes"
+              - generic [ref=e111]: Please provide brief details of previous markets held
+              - 'document "Please provide brief details of previous markets held: Previous Market Details" [ref=e113]': Previous Market Details
+              - generic [ref=e114]: What type of market do you want to hold?
+              - 'document "What type of market do you want to hold?: Car boot sale (can include car boot and tabletop sales, should not include new goods, and should be restricted as far as possible to householders selling surplus household items and not traders)" [ref=e116]': Car boot sale (can include car boot and tabletop sales, should not include new goods, and should be restricted as far as possible to householders selling surplus household items and not traders)
+              - generic [ref=e117]: Name of your market
+              - 'document "Name of your market: Flower Market" [ref=e119]': Flower Market
+              - generic [ref=e120]: Please tell us what commodities that you will have available on your market, select all that apply
+              - 'document "Please tell us what commodities that you will have available on your market, select all that apply: Please tell us what commodities that you will have available on your market, select all that apply" [ref=e122]':
+                - list [ref=e123]:
+                  - listitem [ref=e124]: Unwanted household goods (second-hand items sold by householders, not traders)
+                  - listitem [ref=e126]: Hot cooked food, drinks and sweets
+              - generic [ref=e128]: What dates and times will the market open? Please select your date range and manage individual dates.
+              - 'document "What dates and times will the market open? Please select your date range and manage individual dates.: What dates and times will the market open? Please select your date range and manage individual dates." [ref=e130]':
+                - generic [ref=e131]:
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - strong [ref=e134]: "Date Range:"
+                      - text: 01/04/2026 - 20/04/2026
+                    - generic [ref=e136]: 20 days
+                  - generic [ref=e139] [cursor=pointer]: View all dates
+              - generic [ref=e140]: What is the capacity of your market (maximum number of individual trading spaces available to rent)
+              - 'document "What is the capacity of your market (maximum number of individual trading spaces available to rent): What is the capacity of your market (maximum number of individual trading spaces available to rent)" [ref=e142]': "100"
+              - generic [ref=e143]: How many of these trading spaces do you expect to be occupied (Markets with less than 5 trading spaces do not require a market rights licence)
+              - 'document "How many of these trading spaces do you expect to be occupied (Markets with less than 5 trading spaces do not require a market rights licence): How many of these trading spaces do you expect to be occupied (Markets with less than 5 trading spaces do not require a market rights licence)" [ref=e145]': "50"
+              - generic [ref=e146]: What type of spaces will these include? Please select all that apply
+              - 'document "What type of spaces will these include? Please select all that apply: What type of spaces will these include? Please select all that apply" [ref=e148]':
+                - list [ref=e149]:
+                  - listitem [ref=e150]: Demountable stalls
+                  - listitem [ref=e152]: Stands
+                  - listitem [ref=e154]: Vehicles
+              - generic [ref=e156]: What is the charge to rent a trading space at the market? Please list all charges that apply
+              - 'document "What is the charge to rent a trading space at the market? Please list all charges that apply : What is the charge to rent a trading space at the market? Please list all charges that apply" [ref=e158]': "200"
+              - generic [ref=e159]: What best describes the nature of your market
+              - 'document "What best describes the nature of your market: What best describes the nature of your market" [ref=e161]':
+                - list [ref=e162]:
+                  - listitem [ref=e163]: Commercial
+              - generic [ref=e165]: Please provide more details about the purpose and benefit of your market
+              - 'document "Please provide more details about the purpose and benefit of your market: purpose and benefits" [ref=e167]': purpose and benefits
+              - generic [ref=e168]: Is your market part of a wider event?
+              - 'document "Is your market part of a wider event?: No" [ref=e170]': "No"
+              - generic [ref=e171]: Please select all the areas the market will be located
+              - 'document "Please select all the areas the market will be located: Please select all the areas the market will be located" [ref=e173]':
+                - list [ref=e174]:
+                  - listitem [ref=e175]: In a road
+              - generic [ref=e177]: Street of the market
+              - 'document "Street of the market: Street of the market" [ref=e179]':
+                - list [ref=e180]:
+                  - listitem [ref=e181]: "selected_street: BUCKHURST ROAD"
+                  - listitem [ref=e182]: "usrn_street: 24501123"
+              - generic [ref=e183]: Will there be any other activities and attractions at your market?
+              - 'document "Will there be any other activities and attractions at your market?: Yes" [ref=e185]': "Yes"
+              - generic [ref=e186]: Please provide the details of other activities and attractions will you be offering at your market
+              - 'document "Please provide the details of other activities and attractions will you be offering at your market: Other activities details" [ref=e188]': Other activities details
+              - generic [ref=e189]: Are there any customer entry charges?
+              - 'document "Are there any customer entry charges?: No" [ref=e191]': "No"
+        - generic [ref=e192]:
+          - generic [ref=e193]: Application history
+          - table [ref=e198]:
+            - rowgroup [ref=e199]:
+              - row "Action Type Status From Status To By Date Details" [ref=e200]:
+                - cell "Action Type" [ref=e201] [cursor=pointer]:
+                  - generic [ref=e202]: Action Type
+                - cell "Status From" [ref=e203] [cursor=pointer]:
+                  - generic [ref=e204]: Status From
+                - cell "Status To" [ref=e205] [cursor=pointer]:
+                  - generic [ref=e206]: Status To
+                - cell "By" [ref=e207] [cursor=pointer]:
+                  - generic [ref=e208]: By
+                - cell "Date" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e210]: Date
+                - cell "Details" [ref=e211] [cursor=pointer]:
+                  - generic [ref=e212]: Details
+            - rowgroup [ref=e213]:
+              - row "Status Update Validation required Awaiting Decision dipashah 2/16/2026 View info" [ref=e214]:
+                - cell "Status Update" [ref=e215]
+                - cell "Validation required" [ref=e216]
+                - cell "Awaiting Decision" [ref=e217]
+                - cell "dipashah" [ref=e218]
+                - cell "2/16/2026" [ref=e219]
+                - cell "View info" [ref=e220]:
+                  - button "View info" [ref=e221] [cursor=pointer]
+              - row "New Application (FO) Application Validation required frant_ofis_test+mcc_dipa2@outlook.com 2/16/2026 View info" [ref=e222]:
+                - cell "New Application (FO)" [ref=e223]
+                - cell "Application" [ref=e224]
+                - cell "Validation required" [ref=e225]
+                - cell "frant_ofis_test+mcc_dipa2@outlook.com" [ref=e226]
+                - cell "2/16/2026" [ref=e227]
+                - cell "View info" [ref=e228]:
+                  - button "View info" [ref=e229] [cursor=pointer]
+        - generic [ref=e230]:
+          - generic [ref=e231]: Declaration
+          - generic [ref=e233]:
+            - generic [ref=e234]: Agree
+            - generic [ref=e235]: "yes"
+        - generic [ref=e236]:
+          - generic [ref=e237]: Status change
+          - generic [ref=e239]:
+            - button "Validation required ⇥ Awaiting Decision on 16/02/2026" [ref=e241] [cursor=pointer]
+            - button "Application ⇥ Validation required on 16/02/2026" [ref=e243] [cursor=pointer]
+        - generic [ref=e245]: Payments & refunds
+        - generic [ref=e247]:
+          - generic [ref=e248]: Notes
+          - generic [ref=e251]: No notes to display
+        - generic [ref=e252]:
+          - generic [ref=e253]: Previous licences
+          - generic [ref=e256]:
+            - grid "Previous licences" [ref=e262]:
+              - caption [ref=e263]: Previous licences
+              - rowgroup [ref=e264]:
+                - 'row "Issuer: activate to sort column descending Type: activate to sort column ascending Order Id: activate to sort column ascending Address: activate to sort column ascending Start Date: activate to sort column ascending End Date: activate to sort column ascending" [ref=e265]':
+                  - 'gridcell "Issuer: activate to sort column descending" [ref=e266] [cursor=pointer]': Issuer 
+                  - 'gridcell "Type: activate to sort column ascending" [ref=e267] [cursor=pointer]': Type 
+                  - 'gridcell "Order Id: activate to sort column ascending" [ref=e268] [cursor=pointer]': Order Id 
+                  - 'gridcell "Address: activate to sort column ascending" [ref=e269] [cursor=pointer]': Address 
+                  - 'gridcell "Start Date: activate to sort column ascending" [ref=e270] [cursor=pointer]': Start Date 
+                  - 'gridcell "End Date: activate to sort column ascending" [ref=e271] [cursor=pointer]': End Date 
+              - rowgroup [ref=e272]:
+                - row "Manchester MAR-rights MAR51446" [ref=e273]:
+                  - gridcell "Manchester" [ref=e274]
+                  - gridcell "MAR-rights" [ref=e275]
+                  - gridcell "MAR51446" [ref=e276]:
+                    - link "MAR51446" [ref=e277] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51446
+                  - gridcell [ref=e278]
+                  - gridcell [ref=e279]
+                  - gridcell [ref=e280]
+                - row "Manchester MAR-rights MAR51644" [ref=e281]:
+                  - gridcell "Manchester" [ref=e282]
+                  - gridcell "MAR-rights" [ref=e283]
+                  - gridcell "MAR51644" [ref=e284]:
+                    - link "MAR51644" [ref=e285] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51644
+                  - gridcell [ref=e286]
+                  - gridcell [ref=e287]
+                  - gridcell [ref=e288]
+                - row "Manchester MAR-rights MAR51688" [ref=e289]:
+                  - gridcell "Manchester" [ref=e290]
+                  - gridcell "MAR-rights" [ref=e291]
+                  - gridcell "MAR51688" [ref=e292]:
+                    - link "MAR51688" [ref=e293] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51688
+                  - gridcell [ref=e294]
+                  - gridcell [ref=e295]
+                  - gridcell [ref=e296]
+                - row "Manchester MAR-rights MAR51445" [ref=e297]:
+                  - gridcell "Manchester" [ref=e298]
+                  - gridcell "MAR-rights" [ref=e299]
+                  - gridcell "MAR51445" [ref=e300]:
+                    - link "MAR51445" [ref=e301] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51445
+                  - gridcell [ref=e302]
+                  - gridcell [ref=e303]
+                  - gridcell [ref=e304]
+                - row "Manchester MAR-rights MAR51643" [ref=e305]:
+                  - gridcell "Manchester" [ref=e306]
+                  - gridcell "MAR-rights" [ref=e307]
+                  - gridcell "MAR51643" [ref=e308]:
+                    - link "MAR51643" [ref=e309] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51643
+                  - gridcell [ref=e310]
+                  - gridcell [ref=e311]
+                  - gridcell [ref=e312]
+                - row "Manchester MAR-rights MAR51687" [ref=e313]:
+                  - gridcell "Manchester" [ref=e314]
+                  - gridcell "MAR-rights" [ref=e315]
+                  - gridcell "MAR51687" [ref=e316]:
+                    - link "MAR51687" [ref=e317] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51687
+                  - gridcell [ref=e318]
+                  - gridcell [ref=e319]
+                  - gridcell [ref=e320]
+                - row "Manchester MAR-rights MAR51327" [ref=e321]:
+                  - gridcell "Manchester" [ref=e322]
+                  - gridcell "MAR-rights" [ref=e323]
+                  - gridcell "MAR51327" [ref=e324]:
+                    - link "MAR51327" [ref=e325] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51327
+                  - gridcell [ref=e326]
+                  - gridcell [ref=e327]
+                  - gridcell [ref=e328]
+                - row "Manchester MAR-rights MAR51448" [ref=e329]:
+                  - gridcell "Manchester" [ref=e330]
+                  - gridcell "MAR-rights" [ref=e331]
+                  - gridcell "MAR51448" [ref=e332]:
+                    - link "MAR51448" [ref=e333] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51448
+                  - gridcell [ref=e334]
+                  - gridcell [ref=e335]
+                  - gridcell [ref=e336]
+                - row "Manchester MAR-rights MAR51646" [ref=e337]:
+                  - gridcell "Manchester" [ref=e338]
+                  - gridcell "MAR-rights" [ref=e339]
+                  - gridcell "MAR51646" [ref=e340]:
+                    - link "MAR51646" [ref=e341] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51646
+                  - gridcell [ref=e342]
+                  - gridcell [ref=e343]
+                  - gridcell [ref=e344]
+                - row "Manchester MAR-rights MAR51326" [ref=e345]:
+                  - gridcell "Manchester" [ref=e346]
+                  - gridcell "MAR-rights" [ref=e347]
+                  - gridcell "MAR51326" [ref=e348]:
+                    - link "MAR51326" [ref=e349] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51326
+                  - gridcell [ref=e350]
+                  - gridcell [ref=e351]
+                  - gridcell [ref=e352]
+                - row "Manchester MAR-rights MAR51447" [ref=e353]:
+                  - gridcell "Manchester" [ref=e354]
+                  - gridcell "MAR-rights" [ref=e355]
+                  - gridcell "MAR51447" [ref=e356]:
+                    - link "MAR51447" [ref=e357] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51447
+                  - gridcell [ref=e358]
+                  - gridcell [ref=e359]
+                  - gridcell [ref=e360]
+                - row "Manchester MAR-rights MAR51645" [ref=e361]:
+                  - gridcell "Manchester" [ref=e362]
+                  - gridcell "MAR-rights" [ref=e363]
+                  - gridcell "MAR51645" [ref=e364]:
+                    - link "MAR51645" [ref=e365] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51645
+                  - gridcell [ref=e366]
+                  - gridcell [ref=e367]
+                  - gridcell [ref=e368]
+                - row "Manchester MAR-rights MAR51689" [ref=e369]:
+                  - gridcell "Manchester" [ref=e370]
+                  - gridcell "MAR-rights" [ref=e371]
+                  - gridcell "MAR51689" [ref=e372]:
+                    - link "MAR51689" [ref=e373] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51689
+                  - gridcell [ref=e374]
+                  - gridcell [ref=e375]
+                  - gridcell [ref=e376]
+                - row "Manchester MAR-rights MAR51329" [ref=e377]:
+                  - gridcell "Manchester" [ref=e378]
+                  - gridcell "MAR-rights" [ref=e379]
+                  - gridcell "MAR51329" [ref=e380]:
+                    - link "MAR51329" [ref=e381] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51329
+                  - gridcell [ref=e382]
+                  - gridcell [ref=e383]
+                  - gridcell [ref=e384]
+                - row "Manchester MAR-rights MAR51648" [ref=e385]:
+                  - gridcell "Manchester" [ref=e386]
+                  - gridcell "MAR-rights" [ref=e387]
+                  - gridcell "MAR51648" [ref=e388]:
+                    - link "MAR51648" [ref=e389] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51648
+                  - gridcell [ref=e390]
+                  - gridcell [ref=e391]
+                  - gridcell [ref=e392]
+                - row "Manchester MAR-rights MAR51328" [ref=e393]:
+                  - gridcell "Manchester" [ref=e394]
+                  - gridcell "MAR-rights" [ref=e395]
+                  - gridcell "MAR51328" [ref=e396]:
+                    - link "MAR51328" [ref=e397] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51328
+                  - gridcell [ref=e398]
+                  - gridcell [ref=e399]
+                  - gridcell [ref=e400]
+                - row "Manchester MAR-rights MAR51647" [ref=e401]:
+                  - gridcell "Manchester" [ref=e402]
+                  - gridcell "MAR-rights" [ref=e403]
+                  - gridcell "MAR51647" [ref=e404]:
+                    - link "MAR51647" [ref=e405] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51647
+                  - gridcell [ref=e406]
+                  - gridcell [ref=e407]
+                  - gridcell [ref=e408]
+                - row "Manchester MAR-rights MAR51649" [ref=e409]:
+                  - gridcell "Manchester" [ref=e410]
+                  - gridcell "MAR-rights" [ref=e411]
+                  - gridcell "MAR51649" [ref=e412]:
+                    - link "MAR51649" [ref=e413] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51649
+                  - gridcell [ref=e414]
+                  - gridcell [ref=e415]
+                  - gridcell [ref=e416]
+                - row "Manchester MAR-rights MAR51286" [ref=e417]:
+                  - gridcell "Manchester" [ref=e418]
+                  - gridcell "MAR-rights" [ref=e419]
+                  - gridcell "MAR51286" [ref=e420]:
+                    - link "MAR51286" [ref=e421] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51286
+                  - gridcell [ref=e422]
+                  - gridcell [ref=e423]
+                  - gridcell [ref=e424]
+                - row "Manchester MAR-rights MAR51288" [ref=e425]:
+                  - gridcell "Manchester" [ref=e426]
+                  - gridcell "MAR-rights" [ref=e427]
+                  - gridcell "MAR51288" [ref=e428]:
+                    - link "MAR51288" [ref=e429] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51288
+                  - gridcell [ref=e430]
+                  - gridcell [ref=e431]
+                  - gridcell [ref=e432]
+                - row "Manchester MAR-rights MAR51486" [ref=e433]:
+                  - gridcell "Manchester" [ref=e434]
+                  - gridcell "MAR-rights" [ref=e435]
+                  - gridcell "MAR51486" [ref=e436]:
+                    - link "MAR51486" [ref=e437] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51486
+                  - gridcell [ref=e438]
+                  - gridcell [ref=e439]
+                  - gridcell [ref=e440]
+                - row "Manchester MAR-rights MAR51485" [ref=e441]:
+                  - gridcell "Manchester" [ref=e442]
+                  - gridcell "MAR-rights" [ref=e443]
+                  - gridcell "MAR51485" [ref=e444]:
+                    - link "MAR51485" [ref=e445] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51485
+                  - gridcell [ref=e446]
+                  - gridcell [ref=e447]
+                  - gridcell [ref=e448]
+                - row "Manchester MAR-rights MAR51642" [ref=e449]:
+                  - gridcell "Manchester" [ref=e450]
+                  - gridcell "MAR-rights" [ref=e451]
+                  - gridcell "MAR51642" [ref=e452]:
+                    - link "MAR51642" [ref=e453] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51642
+                  - gridcell [ref=e454]
+                  - gridcell [ref=e455]
+                  - gridcell [ref=e456]
+                - row "Manchester MAR-rights MAR51686" [ref=e457]:
+                  - gridcell "Manchester" [ref=e458]
+                  - gridcell "MAR-rights" [ref=e459]
+                  - gridcell "MAR51686" [ref=e460]:
+                    - link "MAR51686" [ref=e461] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51686
+                  - gridcell [ref=e462]
+                  - gridcell [ref=e463]
+                  - gridcell [ref=e464]
+                - row "Manchester MAR-rights MAR51487" [ref=e465]:
+                  - gridcell "Manchester" [ref=e466]
+                  - gridcell "MAR-rights" [ref=e467]
+                  - gridcell "MAR51487" [ref=e468]:
+                    - link "MAR51487" [ref=e469] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51487
+                  - gridcell [ref=e470]
+                  - gridcell [ref=e471]
+                  - gridcell [ref=e472]
+                - row "Manchester MAR-rights MAR51641" [ref=e473]:
+                  - gridcell "Manchester" [ref=e474]
+                  - gridcell "MAR-rights" [ref=e475]
+                  - gridcell "MAR51641" [ref=e476]:
+                    - link "MAR51641" [ref=e477] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51641
+                  - gridcell [ref=e478]
+                  - gridcell [ref=e479]
+                  - gridcell [ref=e480]
+                - row "Manchester MAR-rights MAR51685" [ref=e481]:
+                  - gridcell "Manchester" [ref=e482]
+                  - gridcell "MAR-rights" [ref=e483]
+                  - gridcell "MAR51685" [ref=e484]:
+                    - link "MAR51685" [ref=e485] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51685
+                  - gridcell [ref=e486]
+                  - gridcell [ref=e487]
+                  - gridcell [ref=e488]
+                - row "Manchester MAR-rights MAR51619" [ref=e489]:
+                  - gridcell "Manchester" [ref=e490]
+                  - gridcell "MAR-rights" [ref=e491]
+                  - gridcell "MAR51619" [ref=e492]:
+                    - link "MAR51619" [ref=e493] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51619
+                  - gridcell [ref=e494]
+                  - gridcell [ref=e495]
+                  - gridcell [ref=e496]
+                - row "Manchester MAR-rights MAR51618" [ref=e497]:
+                  - gridcell "Manchester" [ref=e498]
+                  - gridcell "MAR-rights" [ref=e499]
+                  - gridcell "MAR51618" [ref=e500]:
+                    - link "MAR51618" [ref=e501] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51618
+                  - gridcell [ref=e502]
+                  - gridcell [ref=e503]
+                  - gridcell [ref=e504]
+                - row "Manchester MAR-rights MAR51657" [ref=e505]:
+                  - gridcell "Manchester" [ref=e506]
+                  - gridcell "MAR-rights" [ref=e507]
+                  - gridcell "MAR51657" [ref=e508]:
+                    - link "MAR51657" [ref=e509] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51657
+                  - gridcell [ref=e510]
+                  - gridcell [ref=e511]
+                  - gridcell [ref=e512]
+                - row "Manchester MAR-rights MAR51337" [ref=e513]:
+                  - gridcell "Manchester" [ref=e514]
+                  - gridcell "MAR-rights" [ref=e515]
+                  - gridcell "MAR51337" [ref=e516]:
+                    - link "MAR51337" [ref=e517] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51337
+                  - gridcell [ref=e518]
+                  - gridcell [ref=e519]
+                  - gridcell [ref=e520]
+                - row "Manchester MAR-rights MAR51656" [ref=e521]:
+                  - gridcell "Manchester" [ref=e522]
+                  - gridcell "MAR-rights" [ref=e523]
+                  - gridcell "MAR51656" [ref=e524]:
+                    - link "MAR51656" [ref=e525] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51656
+                  - gridcell [ref=e526]
+                  - gridcell [ref=e527]
+                  - gridcell [ref=e528]
+                - row "Manchester MAR-rights MAR51617" [ref=e529]:
+                  - gridcell "Manchester" [ref=e530]
+                  - gridcell "MAR-rights" [ref=e531]
+                  - gridcell "MAR51617" [ref=e532]:
+                    - link "MAR51617" [ref=e533] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51617
+                  - gridcell [ref=e534]
+                  - gridcell [ref=e535]
+                  - gridcell [ref=e536]
+                - row "Manchester MAR-rights MAR51616" [ref=e537]:
+                  - gridcell "Manchester" [ref=e538]
+                  - gridcell "MAR-rights" [ref=e539]
+                  - gridcell "MAR51616" [ref=e540]:
+                    - link "MAR51616" [ref=e541] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51616
+                  - gridcell [ref=e542]
+                  - gridcell [ref=e543]
+                  - gridcell [ref=e544]
+                - row "Manchester MAR-rights MAR51691" [ref=e545]:
+                  - gridcell "Manchester" [ref=e546]
+                  - gridcell "MAR-rights" [ref=e547]
+                  - gridcell "MAR51691" [ref=e548]:
+                    - link "MAR51691" [ref=e549] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51691
+                  - gridcell [ref=e550]
+                  - gridcell [ref=e551]
+                  - gridcell [ref=e552]
+                - row "Manchester MAR-rights MAR51690" [ref=e553]:
+                  - gridcell "Manchester" [ref=e554]
+                  - gridcell "MAR-rights" [ref=e555]
+                  - gridcell "MAR51690" [ref=e556]:
+                    - link "MAR51690" [ref=e557] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51690
+                  - gridcell [ref=e558]
+                  - gridcell [ref=e559]
+                  - gridcell [ref=e560]
+                - row "Manchester MAR-rights MAR51330" [ref=e561]:
+                  - gridcell "Manchester" [ref=e562]
+                  - gridcell "MAR-rights" [ref=e563]
+                  - gridcell "MAR51330" [ref=e564]:
+                    - link "MAR51330" [ref=e565] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51330
+                  - gridcell [ref=e566]
+                  - gridcell [ref=e567]
+                  - gridcell [ref=e568]
+                - row "Manchester MAR-rights MAR51451" [ref=e569]:
+                  - gridcell "Manchester" [ref=e570]
+                  - gridcell "MAR-rights" [ref=e571]
+                  - gridcell "MAR51451" [ref=e572]:
+                    - link "MAR51451" [ref=e573] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51451
+                  - gridcell [ref=e574]
+                  - gridcell [ref=e575]
+                  - gridcell [ref=e576]
+                - row "Manchester MAR-rights MAR51693" [ref=e577]:
+                  - gridcell "Manchester" [ref=e578]
+                  - gridcell "MAR-rights" [ref=e579]
+                  - gridcell "MAR51693" [ref=e580]:
+                    - link "MAR51693" [ref=e581] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51693
+                  - gridcell [ref=e582]
+                  - gridcell [ref=e583]
+                  - gridcell [ref=e584]
+                - row "Manchester MAR-rights MAR51450" [ref=e585]:
+                  - gridcell "Manchester" [ref=e586]
+                  - gridcell "MAR-rights" [ref=e587]
+                  - gridcell "MAR51450" [ref=e588]:
+                    - link "MAR51450" [ref=e589] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51450
+                  - gridcell [ref=e590]
+                  - gridcell [ref=e591]
+                  - gridcell [ref=e592]
+                - row "Manchester MAR-rights MAR51692" [ref=e593]:
+                  - gridcell "Manchester" [ref=e594]
+                  - gridcell "MAR-rights" [ref=e595]
+                  - gridcell "MAR51692" [ref=e596]:
+                    - link "MAR51692" [ref=e597] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51692
+                  - gridcell [ref=e598]
+                  - gridcell [ref=e599]
+                  - gridcell [ref=e600]
+                - row "Manchester MAR-rights MAR51453" [ref=e601]:
+                  - gridcell "Manchester" [ref=e602]
+                  - gridcell "MAR-rights" [ref=e603]
+                  - gridcell "MAR51453" [ref=e604]:
+                    - link "MAR51453" [ref=e605] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51453
+                  - gridcell [ref=e606]
+                  - gridcell [ref=e607]
+                  - gridcell [ref=e608]
+                - row "Manchester MAR-rights MAR51497" [ref=e609]:
+                  - gridcell "Manchester" [ref=e610]
+                  - gridcell "MAR-rights" [ref=e611]
+                  - gridcell "MAR51497" [ref=e612]:
+                    - link "MAR51497" [ref=e613] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51497
+                  - gridcell [ref=e614]
+                  - gridcell [ref=e615]
+                  - gridcell [ref=e616]
+                - row "Manchester MAR-rights MAR51695" [ref=e617]:
+                  - gridcell "Manchester" [ref=e618]
+                  - gridcell "MAR-rights" [ref=e619]
+                  - gridcell "MAR51695" [ref=e620]:
+                    - link "MAR51695" [ref=e621] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51695
+                  - gridcell [ref=e622]
+                  - gridcell [ref=e623]
+                  - gridcell [ref=e624]
+                - row "Manchester MAR-rights MAR51452" [ref=e625]:
+                  - gridcell "Manchester" [ref=e626]
+                  - gridcell "MAR-rights" [ref=e627]
+                  - gridcell "MAR51452" [ref=e628]:
+                    - link "MAR51452" [ref=e629] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51452
+                  - gridcell [ref=e630]
+                  - gridcell [ref=e631]
+                  - gridcell [ref=e632]
+                - row "Manchester MAR-rights MAR51496" [ref=e633]:
+                  - gridcell "Manchester" [ref=e634]
+                  - gridcell "MAR-rights" [ref=e635]
+                  - gridcell "MAR51496" [ref=e636]:
+                    - link "MAR51496" [ref=e637] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51496
+                  - gridcell [ref=e638]
+                  - gridcell [ref=e639]
+                  - gridcell [ref=e640]
+                - row "Manchester MAR-rights MAR51650" [ref=e641]:
+                  - gridcell "Manchester" [ref=e642]
+                  - gridcell "MAR-rights" [ref=e643]
+                  - gridcell "MAR51650" [ref=e644]:
+                    - link "MAR51650" [ref=e645] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51650
+                  - gridcell [ref=e646]
+                  - gridcell [ref=e647]
+                  - gridcell [ref=e648]
+                - row "Manchester MAR-rights MAR51455" [ref=e649]:
+                  - gridcell "Manchester" [ref=e650]
+                  - gridcell "MAR-rights" [ref=e651]
+                  - gridcell "MAR51455" [ref=e652]:
+                    - link "MAR51455" [ref=e653] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51455
+                  - gridcell [ref=e654]
+                  - gridcell [ref=e655]
+                  - gridcell [ref=e656]
+                - row "Manchester MAR-rights MAR51697" [ref=e657]:
+                  - gridcell "Manchester" [ref=e658]
+                  - gridcell "MAR-rights" [ref=e659]
+                  - gridcell "MAR51697" [ref=e660]:
+                    - link "MAR51697" [ref=e661] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51697
+                  - gridcell [ref=e662]
+                  - gridcell [ref=e663]
+                  - gridcell [ref=e664]
+                - row "Manchester MAR-rights MAR51696" [ref=e665]:
+                  - gridcell "Manchester" [ref=e666]
+                  - gridcell "MAR-rights" [ref=e667]
+                  - gridcell "MAR51696" [ref=e668]:
+                    - link "MAR51696" [ref=e669] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51696
+                  - gridcell [ref=e670]
+                  - gridcell [ref=e671]
+                  - gridcell [ref=e672]
+                - row "Manchester MAR-rights MAR51622" [ref=e673]:
+                  - gridcell "Manchester" [ref=e674]
+                  - gridcell "MAR-rights" [ref=e675]
+                  - gridcell "MAR51622" [ref=e676]:
+                    - link "MAR51622" [ref=e677] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51622
+                  - gridcell [ref=e678]
+                  - gridcell [ref=e679]
+                  - gridcell [ref=e680]
+                - row "Manchester MAR-rights MAR51621" [ref=e681]:
+                  - gridcell "Manchester" [ref=e682]
+                  - gridcell "MAR-rights" [ref=e683]
+                  - gridcell "MAR51621" [ref=e684]:
+                    - link "MAR51621" [ref=e685] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51621
+                  - gridcell [ref=e686]
+                  - gridcell [ref=e687]
+                  - gridcell [ref=e688]
+                - row "Manchester MAR-rights MAR51665" [ref=e689]:
+                  - gridcell "Manchester" [ref=e690]
+                  - gridcell "MAR-rights" [ref=e691]
+                  - gridcell "MAR51665" [ref=e692]:
+                    - link "MAR51665" [ref=e693] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51665
+                  - gridcell [ref=e694]
+                  - gridcell [ref=e695]
+                  - gridcell [ref=e696]
+                - row "Manchester MAR-rights MAR51305" [ref=e697]:
+                  - gridcell "Manchester" [ref=e698]
+                  - gridcell "MAR-rights" [ref=e699]
+                  - gridcell "MAR51305" [ref=e700]:
+                    - link "MAR51305" [ref=e701] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51305
+                  - gridcell [ref=e702]
+                  - gridcell [ref=e703]
+                  - gridcell [ref=e704]
+                - row "Manchester MAR-rights MAR51624" [ref=e705]:
+                  - gridcell "Manchester" [ref=e706]
+                  - gridcell "MAR-rights" [ref=e707]
+                  - gridcell "MAR51624" [ref=e708]:
+                    - link "MAR51624" [ref=e709] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51624
+                  - gridcell [ref=e710]
+                  - gridcell [ref=e711]
+                  - gridcell [ref=e712]
+                - row "Manchester MAR-rights MAR51668" [ref=e713]:
+                  - gridcell "Manchester" [ref=e714]
+                  - gridcell "MAR-rights" [ref=e715]
+                  - gridcell "MAR51668" [ref=e716]:
+                    - link "MAR51668" [ref=e717] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51668
+                  - gridcell [ref=e718]
+                  - gridcell [ref=e719]
+                  - gridcell [ref=e720]
+                - row "Manchester MAR-rights MAR51623" [ref=e721]:
+                  - gridcell "Manchester" [ref=e722]
+                  - gridcell "MAR-rights" [ref=e723]
+                  - gridcell "MAR51623" [ref=e724]:
+                    - link "MAR51623" [ref=e725] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51623
+                  - gridcell [ref=e726]
+                  - gridcell [ref=e727]
+                  - gridcell [ref=e728]
+                - row "Manchester MAR-rights MAR51667" [ref=e729]:
+                  - gridcell "Manchester" [ref=e730]
+                  - gridcell "MAR-rights" [ref=e731]
+                  - gridcell "MAR51667" [ref=e732]:
+                    - link "MAR51667" [ref=e733] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51667
+                  - gridcell [ref=e734]
+                  - gridcell [ref=e735]
+                  - gridcell [ref=e736]
+                - row "Manchester MAR-rights MAR51626" [ref=e737]:
+                  - gridcell "Manchester" [ref=e738]
+                  - gridcell "MAR-rights" [ref=e739]
+                  - gridcell "MAR51626" [ref=e740]:
+                    - link "MAR51626" [ref=e741] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51626
+                  - gridcell [ref=e742]
+                  - gridcell [ref=e743]
+                  - gridcell [ref=e744]
+                - row "Manchester MAR-rights MAR51669" [ref=e745]:
+                  - gridcell "Manchester" [ref=e746]
+                  - gridcell "MAR-rights" [ref=e747]
+                  - gridcell "MAR51669" [ref=e748]:
+                    - link "MAR51669" [ref=e749] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51669
+                  - gridcell [ref=e750]
+                  - gridcell [ref=e751]
+                  - gridcell [ref=e752]
+                - row "Manchester MAR-rights MAR51628" [ref=e753]:
+                  - gridcell "Manchester" [ref=e754]
+                  - gridcell "MAR-rights" [ref=e755]
+                  - gridcell "MAR51628" [ref=e756]:
+                    - link "MAR51628" [ref=e757] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51628
+                  - gridcell [ref=e758]
+                  - gridcell [ref=e759]
+                  - gridcell [ref=e760]
+                - row "Manchester MAR-rights MAR51627" [ref=e761]:
+                  - gridcell "Manchester" [ref=e762]
+                  - gridcell "MAR-rights" [ref=e763]
+                  - gridcell "MAR51627" [ref=e764]:
+                    - link "MAR51627" [ref=e765] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51627
+                  - gridcell [ref=e766]
+                  - gridcell [ref=e767]
+                  - gridcell [ref=e768]
+                - row "Manchester MAR-rights MAR51385" [ref=e769]:
+                  - gridcell "Manchester" [ref=e770]
+                  - gridcell "MAR-rights" [ref=e771]
+                  - gridcell "MAR51385" [ref=e772]:
+                    - link "MAR51385" [ref=e773] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51385
+                  - gridcell [ref=e774]
+                  - gridcell [ref=e775]
+                  - gridcell [ref=e776]
+                - row "Manchester MAR-rights MAR51541" [ref=e777]:
+                  - gridcell "Manchester" [ref=e778]
+                  - gridcell "MAR-rights" [ref=e779]
+                  - gridcell "MAR51541" [ref=e780]:
+                    - link "MAR51541" [ref=e781] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51541
+                  - gridcell [ref=e782]
+                  - gridcell [ref=e783]
+                  - gridcell [ref=e784]
+                - row "Manchester MAR-rights MAR51466" [ref=e785]:
+                  - gridcell "Manchester" [ref=e786]
+                  - gridcell "MAR-rights" [ref=e787]
+                  - gridcell "MAR51466" [ref=e788]:
+                    - link "MAR51466" [ref=e789] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51466
+                  - gridcell [ref=e790]
+                  - gridcell [ref=e791]
+                  - gridcell [ref=e792]
+                - row "Manchester MAR-rights MAR51465" [ref=e793]:
+                  - gridcell "Manchester" [ref=e794]
+                  - gridcell "MAR-rights" [ref=e795]
+                  - gridcell "MAR51465" [ref=e796]:
+                    - link "MAR51465" [ref=e797] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51465
+                  - gridcell [ref=e798]
+                  - gridcell [ref=e799]
+                  - gridcell [ref=e800]
+                - row "Manchester MAR-rights MAR51435" [ref=e801]:
+                  - gridcell "Manchester" [ref=e802]
+                  - gridcell "MAR-rights" [ref=e803]
+                  - gridcell "MAR51435" [ref=e804]:
+                    - link "MAR51435" [ref=e805] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51435
+                  - gridcell [ref=e806]
+                  - gridcell [ref=e807]
+                  - gridcell [ref=e808]
+                - row "Manchester MAR-rights MAR51677" [ref=e809]:
+                  - gridcell "Manchester" [ref=e810]
+                  - gridcell "MAR-rights" [ref=e811]
+                  - gridcell "MAR51677" [ref=e812]:
+                    - link "MAR51677" [ref=e813] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51677
+                  - gridcell [ref=e814]
+                  - gridcell [ref=e815]
+                  - gridcell [ref=e816]
+                - row "Manchester MAR-rights MAR51357 20/02/2025" [ref=e817]:
+                  - gridcell "Manchester" [ref=e818]
+                  - gridcell "MAR-rights" [ref=e819]
+                  - gridcell "MAR51357" [ref=e820]:
+                    - link "MAR51357" [ref=e821] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51357
+                  - gridcell [ref=e822]
+                  - gridcell [ref=e823]
+                  - gridcell "20/02/2025" [ref=e824]
+                - row "Manchester MAR-rights MAR51599" [ref=e825]:
+                  - gridcell "Manchester" [ref=e826]
+                  - gridcell "MAR-rights" [ref=e827]
+                  - gridcell "MAR51599" [ref=e828]:
+                    - link "MAR51599" [ref=e829] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51599
+                  - gridcell [ref=e830]
+                  - gridcell [ref=e831]
+                  - gridcell [ref=e832]
+                - row "Manchester MAR-rights MAR51676" [ref=e833]:
+                  - gridcell "Manchester" [ref=e834]
+                  - gridcell "MAR-rights" [ref=e835]
+                  - gridcell "MAR51676" [ref=e836]:
+                    - link "MAR51676" [ref=e837] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51676
+                  - gridcell [ref=e838]
+                  - gridcell [ref=e839]
+                  - gridcell [ref=e840]
+                - row "Manchester MAR-rights MAR51436" [ref=e841]:
+                  - gridcell "Manchester" [ref=e842]
+                  - gridcell "MAR-rights" [ref=e843]
+                  - gridcell "MAR51436" [ref=e844]:
+                    - link "MAR51436" [ref=e845] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51436
+                  - gridcell [ref=e846]
+                  - gridcell [ref=e847]
+                  - gridcell [ref=e848]
+                - row "Manchester MAR-rights MAR51637" [ref=e849]:
+                  - gridcell "Manchester" [ref=e850]
+                  - gridcell "MAR-rights" [ref=e851]
+                  - gridcell "MAR51637" [ref=e852]:
+                    - link "MAR51637" [ref=e853] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51637
+                  - gridcell [ref=e854]
+                  - gridcell [ref=e855]
+                  - gridcell [ref=e856]
+                - row "Manchester MAR-rights MAR51515" [ref=e857]:
+                  - gridcell "Manchester" [ref=e858]
+                  - gridcell "MAR-rights" [ref=e859]
+                  - gridcell "MAR51515" [ref=e860]:
+                    - link "MAR51515" [ref=e861] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51515
+                  - gridcell [ref=e862]
+                  - gridcell [ref=e863]
+                  - gridcell [ref=e864]
+                - row "Manchester MAR-rights MAR51636" [ref=e865]:
+                  - gridcell "Manchester" [ref=e866]
+                  - gridcell "MAR-rights" [ref=e867]
+                  - gridcell "MAR51636" [ref=e868]:
+                    - link "MAR51636" [ref=e869] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51636
+                  - gridcell [ref=e870]
+                  - gridcell [ref=e871]
+                  - gridcell [ref=e872]
+                - row "Manchester MAR-rights MAR51639" [ref=e873]:
+                  - gridcell "Manchester" [ref=e874]
+                  - gridcell "MAR-rights" [ref=e875]
+                  - gridcell "MAR51639" [ref=e876]:
+                    - link "MAR51639" [ref=e877] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51639
+                  - gridcell [ref=e878]
+                  - gridcell [ref=e879]
+                  - gridcell [ref=e880]
+                - row "Manchester MAR-rights MAR51638" [ref=e881]:
+                  - gridcell "Manchester" [ref=e882]
+                  - gridcell "MAR-rights" [ref=e883]
+                  - gridcell "MAR51638" [ref=e884]:
+                    - link "MAR51638" [ref=e885] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51638
+                  - gridcell [ref=e886]
+                  - gridcell [ref=e887]
+                  - gridcell [ref=e888]
+                - row "Manchester MAR-rights MAR51275" [ref=e889]:
+                  - gridcell "Manchester" [ref=e890]
+                  - gridcell "MAR-rights" [ref=e891]
+                  - gridcell "MAR51275" [ref=e892]:
+                    - link "MAR51275" [ref=e893] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51275
+                  - gridcell [ref=e894]
+                  - gridcell [ref=e895]
+                  - gridcell [ref=e896]
+                - row "Manchester MAR-rights MAR51671" [ref=e897]:
+                  - gridcell "Manchester" [ref=e898]
+                  - gridcell "MAR-rights" [ref=e899]
+                  - gridcell "MAR51671" [ref=e900]:
+                    - link "MAR51671" [ref=e901] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51671
+                  - gridcell [ref=e902]
+                  - gridcell [ref=e903]
+                  - gridcell [ref=e904]
+                - row "Manchester MAR-rights MAR51670" [ref=e905]:
+                  - gridcell "Manchester" [ref=e906]
+                  - gridcell "MAR-rights" [ref=e907]
+                  - gridcell "MAR51670" [ref=e908]:
+                    - link "MAR51670" [ref=e909] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51670
+                  - gridcell [ref=e910]
+                  - gridcell [ref=e911]
+                  - gridcell [ref=e912]
+                - row "Manchester MAR-rights MAR51277" [ref=e913]:
+                  - gridcell "Manchester" [ref=e914]
+                  - gridcell "MAR-rights" [ref=e915]
+                  - gridcell "MAR51277" [ref=e916]:
+                    - link "MAR51277" [ref=e917] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51277
+                  - gridcell [ref=e918]
+                  - gridcell [ref=e919]
+                  - gridcell [ref=e920]
+                - row "Manchester MAR-rights MAR51475" [ref=e921]:
+                  - gridcell "Manchester" [ref=e922]
+                  - gridcell "MAR-rights" [ref=e923]
+                  - gridcell "MAR51475" [ref=e924]:
+                    - link "MAR51475" [ref=e925] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51475
+                  - gridcell [ref=e926]
+                  - gridcell [ref=e927]
+                  - gridcell [ref=e928]
+                - row "Manchester MAR-rights MAR51596" [ref=e929]:
+                  - gridcell "Manchester" [ref=e930]
+                  - gridcell "MAR-rights" [ref=e931]
+                  - gridcell "MAR51596" [ref=e932]:
+                    - link "MAR51596" [ref=e933] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51596
+                  - gridcell [ref=e934]
+                  - gridcell [ref=e935]
+                  - gridcell [ref=e936]
+                - row "Manchester MAR-rights MAR51673" [ref=e937]:
+                  - gridcell "Manchester" [ref=e938]
+                  - gridcell "MAR-rights" [ref=e939]
+                  - gridcell "MAR51673" [ref=e940]:
+                    - link "MAR51673" [ref=e941] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51673
+                  - gridcell [ref=e942]
+                  - gridcell [ref=e943]
+                  - gridcell [ref=e944]
+                - row "Manchester MAR-rights MAR51595" [ref=e945]:
+                  - gridcell "Manchester" [ref=e946]
+                  - gridcell "MAR-rights" [ref=e947]
+                  - gridcell "MAR51595" [ref=e948]:
+                    - link "MAR51595" [ref=e949] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51595
+                  - gridcell [ref=e950]
+                  - gridcell [ref=e951]
+                  - gridcell [ref=e952]
+                - row "Manchester MAR-rights MAR51672" [ref=e953]:
+                  - gridcell "Manchester" [ref=e954]
+                  - gridcell "MAR-rights" [ref=e955]
+                  - gridcell "MAR51672" [ref=e956]:
+                    - link "MAR51672" [ref=e957] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51672
+                  - gridcell [ref=e958]
+                  - gridcell [ref=e959]
+                  - gridcell [ref=e960]
+                - row "Manchester MAR-rights MAR51675" [ref=e961]:
+                  - gridcell "Manchester" [ref=e962]
+                  - gridcell "MAR-rights" [ref=e963]
+                  - gridcell "MAR51675" [ref=e964]:
+                    - link "MAR51675" [ref=e965] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51675
+                  - gridcell [ref=e966]
+                  - gridcell [ref=e967]
+                  - gridcell [ref=e968]
+                - row "Manchester MAR-rights MAR51355" [ref=e969]:
+                  - gridcell "Manchester" [ref=e970]
+                  - gridcell "MAR-rights" [ref=e971]
+                  - gridcell "MAR51355" [ref=e972]:
+                    - link "MAR51355" [ref=e973] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51355
+                  - gridcell [ref=e974]
+                  - gridcell [ref=e975]
+                  - gridcell [ref=e976]
+                - row "Manchester MAR-rights MAR51597" [ref=e977]:
+                  - gridcell "Manchester" [ref=e978]
+                  - gridcell "MAR-rights" [ref=e979]
+                  - gridcell "MAR51597" [ref=e980]:
+                    - link "MAR51597" [ref=e981] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51597
+                  - gridcell [ref=e982]
+                  - gridcell [ref=e983]
+                  - gridcell [ref=e984]
+                - row "Manchester MAR-rights MAR51674" [ref=e985]:
+                  - gridcell "Manchester" [ref=e986]
+                  - gridcell "MAR-rights" [ref=e987]
+                  - gridcell "MAR51674" [ref=e988]:
+                    - link "MAR51674" [ref=e989] [cursor=pointer]:
+                      - /url: viewapplication?oid=LICO51674
+                  - gridcell [ref=e990]
+                  - gridcell [ref=e991]
+                  - gridcell [ref=e992]
+            - status [ref=e995]: Showing 1 to 90 of 90 entries
+        - generic [ref=e997]:
+          - generic [ref=e998]: Associated evidence
+          - generic [ref=e999]:
+            - generic [ref=e1000]:
+              - button "Other (Other) (Created 29/01/2026) (Exp permanent)" [ref=e1001] [cursor=pointer]
+              - text: (Business document)
+            - generic [ref=e1002]:
+              - button "Premises licence (Permission to sell alcohol) (Created 15/01/2026) (Exp 01/07/2027)" [ref=e1003] [cursor=pointer]
+              - text: (Business document)
+            - button "Supporting document (Created 16/02/2026)" [ref=e1005] [cursor=pointer]
+        - generic [ref=e1006]:
+          - generic [ref=e1007]: Correspondence
+          - generic [ref=e1010]:
+            - generic [ref=e1011]:
+              - generic [ref=e1014]:
+                - text: Show
+                - combobox "Show entries" [ref=e1015]:
+                  - option "10" [selected]
+                  - option "25"
+                  - option "50"
+                  - option "100"
+                - text: entries
+              - generic [ref=e1018]:
+                - text: "Search:"
+                - searchbox "Search:" [ref=e1019]
+            - grid [ref=e1022]:
+              - rowgroup [ref=e1023]:
+                - 'row "Created: activate to sort column descending Correspondence: activate to sort column ascending Subject: activate to sort column ascending Content: activate to sort column ascending Sent to: activate to sort column ascending Reference ID: activate to sort column ascending" [ref=e1024]':
+                  - 'gridcell "Created: activate to sort column descending" [ref=e1025] [cursor=pointer]': Created 
+                  - 'gridcell "Correspondence: activate to sort column ascending" [ref=e1026] [cursor=pointer]': Correspondence 
+                  - 'gridcell "Subject: activate to sort column ascending" [ref=e1027] [cursor=pointer]': Subject 
+                  - 'gridcell "Content: activate to sort column ascending" [ref=e1028] [cursor=pointer]': Content 
+                  - 'gridcell "Sent to: activate to sort column ascending" [ref=e1029] [cursor=pointer]': Sent to 
+                  - 'gridcell "Reference ID: activate to sort column ascending" [ref=e1030] [cursor=pointer]': Reference ID 
+              - rowgroup [ref=e1031]:
+                - row "No records to display" [ref=e1032]:
+                  - gridcell "No records to display" [ref=e1033]
+            - list [ref=e1038]:
+              - listitem:
+                - link "Previous" [ref=e1039]:
+                  - /url: "#"
+              - listitem:
+                - link "Next" [ref=e1040]:
+                  - /url: "#"
+        - button "Print draft licence" [ref=e1043] [cursor=pointer]
+  - contentinfo [ref=e1045]
+```
