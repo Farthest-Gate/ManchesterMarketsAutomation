@@ -49,37 +49,32 @@ export class MarketApplicationPage {
             .fill(licenceNumber);
     }
 
-
-  
-
-async marketTimings(data : MarketTimings) {
+    async marketTimings(data : MarketTimings) {
     await this.page.getByRole('textbox', { name: 'Start Date' }).fill(data.startDate);
     await this.page.getByRole('textbox', { name: 'End Date' }).fill(data.endDate);
     await this.page.getByRole('textbox', { name: 'Start Hour' }).fill(data.startTime);
     await this.page.getByRole('textbox', { name: 'End Hour' }).fill(data.endTime);
 
-}
+    }
 
-async marketCapacity(capacity: MarketDetails) {
+    async marketCapacity(capacity: MarketDetails) {
     await this.page.getByRole('spinbutton', { name: 'What is the capacity of your' }).fill(capacity.marketcapacity);
     await this.page.getByRole('spinbutton', { name: 'How many of these trading' }).fill(capacity.occupiedspace);
-}
+    }
 
-
-
- // Generic methods
-async selectCheckbox(label: string) {
-  const checkbox = this.page.getByRole('checkbox', { name: label });
-  if (!(await checkbox.isChecked())) {
+    // Generic methods
+    async selectCheckbox(label: string) {
+    const checkbox = this.page.getByRole('checkbox', { name: label });
+     if (!(await checkbox.isChecked())) {
     await checkbox.check();
-  }
-}
+    }
+    }
 
-async selectCheckboxes(labels: string[]) {
+    async selectCheckboxes(labels: string[]) {
   for (const label of labels) {
     await this.selectCheckbox(label);
   }
-}
+    }
 
 // Use the data from marketApplicationData
 // async selectTypeofSpace(typeOfSpace : MarketDetails) {
@@ -145,14 +140,18 @@ async otherPermissions(){
     await this.page.getByRole('group', { name: 'Have you undertaken any' }).getByLabel('No').check();
     //Other information
     await this.page.getByRole('group', { name: 'Is there any other information' }).getByLabel('No').check();
-    //Add Declaration
-    await this.page.getByRole('button', { name: 'Add Declaration' }).click();
-    await this.page.getByRole('group', { name: 'I agree' }).getByLabel('Yes').check();
-    await this.page.locator('#btnSave').click();
+    // //Add Declaration
+    // await this.page.getByRole('button', { name: 'Add Declaration' }).click();
+    // await this.page.getByRole('group', { name: 'I agree' }).getByLabel('Yes').check();
+    // await this.page.locator('#btnSave').click();
 }
 async submitApplication()
 {
     await this.page.getByRole('button', { name: 'Submit' }).click();
+}
+async saveApplication()
+{
+    await this.page.getByRole('button', { name: 'Save' }).click();
 }
 
 

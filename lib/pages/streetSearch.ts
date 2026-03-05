@@ -6,13 +6,13 @@ export class streetSearch {
     async streetAddress(streetInitials: string,streetInitials1: string) {
   
 
-        const searchStreet = this.page.getByTitle("Nothing selected");
+        const searchStreet = this.page.getByPlaceholder("Type to search for streets...");
         await expect(searchStreet).toBeVisible();
         await searchStreet.click();
 
-        await this.page.getByRole('textbox', { name: 'Search' }).click();
-        await this.page.getByRole('textbox', { name: 'Search' }).fill(streetInitials);
-        await this.page.getByRole('textbox', { name: 'Search' }).fill(streetInitials1);
+        await this.page.getByPlaceholder("Type to search for streets...").click();
+        await this.page.getByPlaceholder("Type to search for streets...").fill(streetInitials);
+        await this.page.getByPlaceholder("Type to search for streets...").fill(streetInitials1);
 
 
         await this.page.getByRole('option', {

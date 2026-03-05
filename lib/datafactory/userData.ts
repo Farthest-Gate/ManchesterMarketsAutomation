@@ -5,6 +5,6 @@ export interface userData
 }
 export const userData : userData =
  {
-  email: "frant_ofis_test+mcc_dipa2@outlook.com",
+  email: "frant_ofis_test+mcc_dipa23@outlook.com",
   password: "Dipa123!"
 }

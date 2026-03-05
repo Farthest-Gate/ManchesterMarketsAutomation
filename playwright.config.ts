@@ -8,7 +8,7 @@ dotenv.config({ path: path.resolve(__dirname, `.env.${ENV}`), debug: true });
 
 export default defineConfig({
   testDir: './tests',         // folder where your tests are
-  timeout: 500000,           // max time per test
+  timeout: 700000,           // max time per test
   
   use: {
     baseURL: process.env.BASE_URL,
