@@ -4,8 +4,8 @@ import { MarketApplicationPage } from '../../lib/pages/marketApplicationPage';
 import { expect } from '@playwright/test';
 import { AddressModalPage } from '../../lib/pages/addressModalPage';
 import { streetSearch } from '../../lib/pages/streetSearch';
-import {marketApplicationData} from '../../lib/datafactory/marketApplicationData';
-import {userData} from '../../lib/datafactory/userData';
+import { marketApplicationData } from '../../lib/datafactory/marketApplicationData';
+import { userData } from '../../lib/datafactory/userData';
 import path from 'path';
 
 let savedBOUrl: string;
@@ -14,62 +14,62 @@ let savedCustomerUrl: string;
 test('Create markets rights application', async ({ page }) => {
 
 
-    const loginPage = new LoginPage(page);
-    await loginPage.open();
-    await loginPage.login(userData.email, userData.password);
+  const loginPage = new LoginPage(page);
+  await loginPage.open();
+  await loginPage.login(userData.email, userData.password);
 
-    const marketPage = new MarketApplicationPage(page);
-    //const addressModal = new AddressModalPage(page);
-    const streetSearchModal = new streetSearch(page);
+  const marketPage = new MarketApplicationPage(page);
+  //const addressModal = new AddressModalPage(page);
+  const streetSearchModal = new streetSearch(page);
 
-    await marketPage.open();
-    await page.waitForLoadState('networkidle');
-    //Visual test for form fields
-    //await expect(page).toHaveScreenshot('market-rights-application-form.png', {fullPage: true});
+  await marketPage.open();
+  await page.waitForLoadState('networkidle');
+  //Visual test for form fields
+  //await expect(page).toHaveScreenshot('market-rights-application-form.png', {fullPage: true});
 
-    await marketPage.fillPreviousMarketDetails();
+  await marketPage.fillPreviousMarketDetails();
 
-    await marketPage.selectMarketType(marketApplicationData.marketDetails.marketType);
-    await marketPage.setMarketName(marketApplicationData.marketDetails.marketname);
-    await marketPage.selectCommodities(marketApplicationData.marketDetails.commodity1, marketApplicationData.marketDetails.commodity2);
-    await marketPage.verifySelectedCommodities(marketApplicationData.marketDetails.commodity1, marketApplicationData.marketDetails.commodity2);
-   // await marketPage.alcoholDetails(marketApplicationData.marketDetails.premiseNumber);
-    await marketPage.marketTimings(marketApplicationData.timings);
+  await marketPage.selectMarketType(marketApplicationData.marketDetails.marketType);
+  await marketPage.setMarketName(marketApplicationData.marketDetails.marketname);
+  await marketPage.selectCommodities(marketApplicationData.marketDetails.commodity1, marketApplicationData.marketDetails.commodity2);
+  await marketPage.verifySelectedCommodities(marketApplicationData.marketDetails.commodity1, marketApplicationData.marketDetails.commodity2);
+  // await marketPage.alcoholDetails(marketApplicationData.marketDetails.premiseNumber);
+  await marketPage.marketTimings(marketApplicationData.timings);
 
-    await marketPage.marketCapacity(marketApplicationData.marketDetails);    
-    await marketPage.selectTypeofSpace(marketApplicationData.marketDetails.stallTypes);
+  await marketPage.marketCapacity(marketApplicationData.marketDetails);
+  await marketPage.selectTypeofSpace(marketApplicationData.marketDetails.stallTypes);
 
-    const filePath = path.join(__dirname, '../../data/check.png');
-    await marketPage.uploadLayoutPlan(filePath);
-   await page.pause();
-    await marketPage.tradingSpaceRent(marketApplicationData.marketDetails);   
-    await marketPage.selectNatureofMarket(marketApplicationData.marketDetails.natureOfMarket);
-    await marketPage.purposeAndBenifits(marketApplicationData.marketDetails);
-     await marketPage.marketLocation(marketApplicationData.marketDetails.location);
-     await streetSearchModal.streetAddress(marketApplicationData.streetAddressData.streetInitials,marketApplicationData.streetAddressData.streetInitials1);
-    //await addressModal.marketAddress(marketApplicationData.address.postcode);
-    await page.getByText('Please provide any further details about the location of the market').fill('More detaiils');
-   
-    await marketPage.otherActivitiesAndChageables();
-    await marketPage.otherPermissions();
-    await marketPage.confirmTermsAndConditions(marketApplicationData.marketDetails.terms);
-    //await marketPage.saveApplication();
-    await marketPage.submitApplication();
-    //await page.waitForLoadState('networkidle');
-    //await page.pause();
-     await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000});
-    await expect(page.getByLabel('Status: Validation required')).toBeVisible();
-    const currentURL = page.url();
-    console.log(currentURL);
-    savedCustomerUrl = currentURL;
+  const filePath = path.join(__dirname, '../../data/check.png');
+  await marketPage.uploadLayoutPlan(filePath);
+  await page.pause();
+  await marketPage.tradingSpaceRent(marketApplicationData.marketDetails);
+  await marketPage.selectNatureofMarket(marketApplicationData.marketDetails.natureOfMarket);
+  await marketPage.purposeAndBenifits(marketApplicationData.marketDetails);
+  await marketPage.marketLocation(marketApplicationData.marketDetails.location);
+  await streetSearchModal.streetAddress(marketApplicationData.streetAddressData.streetInitials, marketApplicationData.streetAddressData.streetInitials1);
+  //await addressModal.marketAddress(marketApplicationData.address.postcode);
+  await page.getByText('Please provide any further details about the location of the market').fill('More detaiils');
 
-    const replaceToBO = currentURL.replace("/sf/", "/sfbo/");
-    console.log(replaceToBO);
-    savedBOUrl = replaceToBO;
-   
+  await marketPage.otherActivitiesAndChageables();
+  await marketPage.otherPermissions();
+  await marketPage.confirmTermsAndConditions(marketApplicationData.marketDetails.terms);
+  //await marketPage.saveApplication();
+  await marketPage.submitApplication();
+  //await page.waitForLoadState('networkidle');
+  //await page.pause();
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000 });
+  await expect(page.getByLabel('Status: Validation required')).toBeVisible();
+  const currentURL = page.url();
+  console.log(currentURL);
+  savedCustomerUrl = currentURL;
+
+  const replaceToBO = currentURL.replace("/sf/", "/sfbo/");
+  console.log(replaceToBO);
+  savedBOUrl = replaceToBO;
+
 });
 
-test.skip('BO asks for More information', async ({ page }) => {
+test('BO asks for More information', async ({ page }) => {
   await page.goto(savedBOUrl);
   await page.getByRole('textbox', { name: 'Username' }).fill('dipashah');
   await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
@@ -80,63 +80,63 @@ test.skip('BO asks for More information', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Update Status' }).click();
   await page.getByRole('checkbox', { name: 'Other' }).check();
-  await page.getByRole('button', { name: 'Submit' }).click();   
-  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000});
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 150000 });
   await expect(page.getByLabel('Status: More Information Required')).toContainText('More Information Required');
 });
 
-test.skip('Customer Provides more information', async ({ page }) => {
-    const loginPage = new LoginPage(page);
-    await loginPage.open();
-    await loginPage.login(userData.email, userData.password);
-    await page.goto(savedCustomerUrl,{ waitUntil: 'domcontentloaded' });
-    await page.getByRole('button', { name: 'Update' }).click();
-    await page.getByRole('button', { name: 'Submit' }).click();
-    //await page.pause(); 
-    await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000});
-    await expect(page.getByLabel('Status: Validation required')).toContainText('Validation required'); 
+test('Customer Provides more information', async ({ page }) => {
+  const loginPage = new LoginPage(page);
+  await loginPage.open();
+  await loginPage.login(userData.email, userData.password);
+  await page.goto(savedCustomerUrl, { waitUntil: 'domcontentloaded' });
+  await page.getByRole('button', { name: 'Update' }).click();
+  await page.getByRole('button', { name: 'Submit' }).click();
+  //await page.pause();
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 150000 });
+  await expect(page.getByLabel('Status: Validation required')).toContainText('Validation required');
 
 });
 test('BO send offer', async ({ page }) => {
-await page.goto(savedBOUrl);
-await page.getByRole('textbox', { name: 'Username' }).fill('dipashah');
-await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
-await page.getByRole('button', { name: 'Submit' }).click();
+  await page.goto(savedBOUrl);
+  await page.getByRole('textbox', { name: 'Username' }).fill('dipashah');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Dipa123!');
+  await page.getByRole('button', { name: 'Submit' }).click();
 
-await page.getByRole('button', { name: 'Change status' }).click();
-await page.getByRole('alert').getByRole('option', { name: 'Preapproval' }).click();
-await page.getByRole('button', { name: 'Update Status' }).click();
-await page.getByRole('textbox', { name: 'Please provide your' }).click();
-await page.getByRole('textbox', { name: 'Please provide your' }).fill('Email text to test');
-await page.getByRole('textbox', { name: 'Please add the' }).fill('11/04/2026');
-await page.getByRole('button', { name: 'Submit' }).click();
- await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 120000});
-await expect(page.getByLabel('Status: Awaiting Applicant actions')).toContainText('Awaiting Applicant actions');
-const currentBOURL = page.url();
-console.log(currentBOURL);
+  await page.getByRole('button', { name: 'Change status' }).click();
+  await page.getByRole('alert').getByRole('option', { name: 'Preapproval' }).click();
+  await page.getByRole('button', { name: 'Update Status' }).click();
+  await page.getByRole('textbox', { name: 'Please provide your' }).click();
+  await page.getByRole('textbox', { name: 'Please provide your' }).fill('Email text to test');
+  await page.getByRole('textbox', { name: 'Please add the' }).fill('11/04/2026');
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 120000 });
+  await expect(page.getByLabel('Status: Awaiting applicant actions')).toContainText('Awaiting applicant actions');
+  const currentBOURL = page.url();
+  console.log(currentBOURL);
 
 });
 
 test('Customer accepts the offer', async ({ page }) => {
- 
- const loginPage = new LoginPage(page);
- await loginPage.open();
+
+  const loginPage = new LoginPage(page);
+  await loginPage.open();
   await loginPage.login(userData.email, userData.password);
-   await page.goto(savedCustomerUrl);
-   await expect(page.getByRole('button', { name: 'Offer decision' })).toBeVisible();
+  await page.goto(savedCustomerUrl);
+  await expect(page.getByRole('button', { name: 'Offer decision' })).toBeVisible();
   await page.getByRole('button', { name: 'Offer decision' }).click();
 
   const modal = page.locator('.modal-body');
 
-await modal.locator('#formbuilder-1_panel_1_component_0_accept_terms_accepted_0').check();
-await modal.locator('#formbuilder-1_panel_1_component_0_accept_terms_accepted_draft_1').check();
-await page.getByRole('button', { name: 'Submit' }).click();
-await expect(page.getByText('Status', { exact: true })).toBeVisible();
-await expect(page.getByLabel('Status: Awaiting Payment')).toContainText('Awaiting Payment');
+  await modal.locator('#formbuilder-1_panel_1_component_0_accept_terms_accepted_0').check();
+  await modal.locator('#formbuilder-1_panel_1_component_0_accept_terms_accepted_draft_1').check();
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 150000 });
+  await expect(page.getByLabel('Status: Awaiting Payment')).toContainText('Awaiting Payment');
   await expect(page.getByRole('button', { name: 'Pay outstading fee' })).toBeVisible();
   await page.getByRole('button', { name: 'Pay outstading fee' }).click();
 
-await page.getByRole('button', { name: 'Submit' }).click();
+  await page.getByRole('button', { name: 'Submit' }).click();
   await page.getByRole('textbox', { name: 'Name on card' }).isVisible({ timeout: 140000 });
   await page.getByRole('textbox', { name: 'Name on card' }).fill('Dipa Shah');
   await page.getByRole('textbox', { name: 'Card number' }).isVisible();
@@ -148,14 +148,14 @@ await page.getByRole('button', { name: 'Submit' }).click();
   await page.getByRole('button', { name: 'Pay Now' }).isVisible();
   await page.getByRole('button', { name: 'Pay Now' }).click();
   //await page.getByRole('button', { name: 'Pay Now' }).isVisible();
- 
+
   //await page.locator('h1').isVisible({timeout: 200000});
   //await expect(page.locator('h1')).toContainText('Payment');
-  await page.locator('#container').isVisible({timeout: 200000});
+  await page.locator('#container').isVisible({ timeout: 200000 });
   await expect(page.locator('#container')).toContainText('Thank you for your payment');
   await expect(page.locator('#container')).toContainText('To Application');
   await page.getByRole('link', { name: 'To Application' }).click();
-  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000});
+  await expect(page.getByText('Status', { exact: true })).toBeVisible({ timeout: 100000 });
   await expect(page.getByLabel('Status: Preapproval')).toContainText('Preapproval');
 });
 
@@ -172,7 +172,7 @@ test.skip('Customer Declines the offer', async ({ page }) => {
   await page.getByRole('button', { name: 'Decline' }).click();
 
 
-  
+
 
   await expect(page.getByLabel('Status: Withdrawn')).toContainText('Withdrawn');
 });

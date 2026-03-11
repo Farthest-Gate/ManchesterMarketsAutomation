@@ -16,16 +16,16 @@ test('test', async ({ page }) => {
   await page1.pause();
   let sfbourl = page1.url();
   console.log(sfbourl);
-  let sfurl = sfbourl.replace("/sfbo/","/sf/");
+  let sfurl = sfbourl.replace("/sfbo/", "/sf/");
 
- 
-     await page1.goto(sfurl);
+
+  await page1.goto(sfurl);
   console.log(sfurl);
 
   // let sfbourl= "https://wcc-licensing-staging.farthestgate.co.uk/sfbo/control/login";
   //  let sfbourl1= "https://wcc-licensing-staging.farthestgate.co.uk/sfbo/control/viewapplication?oid=LICO78042";
   //await page.goto(sfbourl, { waitUntil: 'domcontentloaded' });
- 
+
   //await page1.goto('https://mcc-markets-live.farthestgate.co.uk/sf/control/viewapplication?oid=LICO51451');
   await page1.pause();
   await page1.getByRole('textbox', { name: 'Email' }).click();
@@ -48,7 +48,7 @@ test('test', async ({ page }) => {
   await page1.getByRole('button', { name: 'Pay Now' }).isVisible();
   await page1.getByRole('button', { name: 'Pay Now' }).click();
   await page1.getByRole('button', { name: 'Pay Now' }).isVisible();
- 
+
   await page1.locator('h1').isVisible();
   await expect(page1.locator('h1')).toContainText('Payment');
   await expect(page1.locator('#container')).toContainText('Thank you for your payment');
